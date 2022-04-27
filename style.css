@@ -1,0 +1,114 @@
+:root{
+  --prime-color: #B08C3E;
+  --secondary-color: #664C13;
+  
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Barlow', sans-serif;
+}
+
+h1{
+  color: var(--prime-color);
+}
+
+.main{
+  width: 100%;
+  height: 70%;
+  background-color: var(--prime-color);
+}
+
+.navbar{
+  padding: 0;
+  background-color: var(--prime-color);
+}
+
+
+.navbar-brand{
+  font-weight: 300;
+  color: var(--secondary-color);
+  padding: 20px;
+}
+
+.nav-link {
+  color:#664C13;
+}
+
+.main-pic-1 {
+  position: relative;
+  margin-top: 300px;
+  margin-left: 500px;
+  width: 300px;
+
+}
+
+.main-pic-2 {
+  display: inline-block; 
+  position: absolute; 
+  width: 600px; 
+  height: 400px; 
+  overflow: hidden; 
+  margin-top: 150px;
+  margin-left: 100px;
+
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+     }
+}
+
+@-webkit-keyframes fadeInAnimation {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img{
+  opacity: 0;
+  animation-name: fadeInAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+li:nth-child(2) > img {
+  animation-delay: 0.4s;
+}
+
+ul{
+  list-style: none;
+  display: inline-block;
+  
+}
+
+.header{
+  font-weight: 500;
+  font-size: 6rem;
+  color: black;
+  position: relative;
+  padding-left: 15%;
+  margin-bottom: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 989px){
+  .header{
+    text-align: center;
+  }
+  
+  .main-img{
+     
+  }
+}
