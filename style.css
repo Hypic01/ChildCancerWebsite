@@ -133,7 +133,7 @@ body {
           margin-top: -10rem;
           margin-left: -15rem; } }
   .header__text {
-    margin-left: 5rem;
+    margin-left: 20rem;
     margin-right: 5rem;
     padding: 10rem;
     margin-top: -30px; }
@@ -160,6 +160,7 @@ body {
     max-width: 100%;
     border-radius: 10px;
     object-fit: cover;
-    flex-basis: 10%; }
+    flex-basis: 10%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); }
   .section-letter__description {
     padding-left: 5rem; }
