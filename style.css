@@ -1,0 +1,165 @@
+.container {
+  display: flex; }
+
+:root {
+  --primary-color: #B08C3E;
+  --secondary-color: #664C13;
+  --tertiary-color: #F9F0D1; }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  11.1% {
+    opacity: 1; }
+  33.3% {
+    opacity: 1; }
+  44.4% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  min-width: 100vh; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Barlow", sans-serif; }
+
+.heading-primary--main {
+  display: block;
+  font-weight: 500;
+  font-size: 6rem;
+  margin-bottom: 2rem; }
+
+.heading-primary--sub {
+  display: block;
+  font-weight: 300;
+  font-size: 3rem; }
+
+.heading-secondary {
+  font-weight: 500;
+  font-size: 5rem;
+  margin-bottom: 5rem; }
+
+.heading-tertiary {
+  font-weight: 300;
+  font-size: 2rem; }
+
+.list {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-right: 50%; }
+  .list > *:not(:last-child) {
+    margin-bottom: 4rem; }
+
+.header {
+  background-color: var(--primary-color);
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  max-width: 100%; }
+  @media only screen and (max-width: 820px) {
+    .header {
+      flex-direction: column-reverse;
+      padding: 1rem;
+      justify-content: center; } }
+  @media only screen and (max-width: 425px) {
+    .header {
+      height: auto; } }
+  .header__photo {
+    margin-right: auto;
+    padding: 10rem 20rem;
+    position: relative;
+    margin-left: -10rem; }
+    @media only screen and (max-width: 820px) {
+      .header__photo {
+        margin: 0;
+        right: 15rem;
+        bottom: 5rem; } }
+    @media only screen and (max-width: 425px) {
+      .header__photo {
+        right: 0;
+        bottom: 0;
+        margin-bottom: 20rem; } }
+    .header__photo--img {
+      border-radius: 5px;
+      opacity: 0;
+      object-fit: contain;
+      margin-top: -100px; }
+    .header__photo--1 {
+      max-width: 20rem;
+      animation: blink 6s infinite; }
+      @media only screen and (max-width: 425px) {
+        .header__photo--1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -15rem;
+          margin-left: -10rem; } }
+    .header__photo--2 {
+      max-width: 30rem;
+      animation: blink 6s infinite;
+      animation-delay: 2s;
+      position: absolute;
+      bottom: 20px;
+      right: 20px; }
+      @media only screen and (max-width: 425px) {
+        .header__photo--2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -10rem;
+          margin-left: -15rem; } }
+    .header__photo--3 {
+      position: absolute;
+      max-width: 30rem;
+      top: 120px;
+      left: 400px;
+      animation: blink 6s infinite;
+      animation-delay: 4s; }
+      @media only screen and (max-width: 425px) {
+        .header__photo--3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -10rem;
+          margin-left: -15rem; } }
+  .header__text {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 10rem;
+    margin-top: -30px; }
+    @media only screen and (max-width: 820px) {
+      .header__text {
+        margin: 0;
+        padding: 2rem;
+        margin-bottom: 10rem;
+        text-align: center; } }
+    @media only screen and (max-width: 425px) {
+      .header__text {
+        padding: 10rem 20rem;
+        justify-content: center;
+        margin-bottom: 50px; } }
+
+.section-about {
+  padding: 15rem; }
+
+.section-letter {
+  padding: 15rem;
+  background-color: var(--primary-color);
+  text-align: right; }
+  .section-letter--img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-basis: 10%; }
+  .section-letter__description {
+    padding-left: 5rem; }
